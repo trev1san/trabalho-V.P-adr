@@ -1,0 +1,87 @@
+header{
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+    
+/* Header */
+header {
+    background: linear-gradient(90deg, #cc0000, #000000);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+span{
+
+}
+/* Menu */
+nav {
+
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(3, 3, 3);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+p{
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #e03232;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+#sonhos{
+    color: rgb(15, 15, 15);
+}
+h1{
+    font-size: 50px;
+    color: #000000;
+    font-family:'montserrat' ; 
+}
