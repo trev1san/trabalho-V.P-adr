@@ -161,3 +161,29 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(secEstatisticas); // Começa a vigiar a seção de estatísticas
     }
 });
+const images = document.querySelectorAll('.flashcard-image img');
+const btn = document.getElementById('proximo');
+const voltar = document.getElementById('voltar')
+
+let current = 0;
+
+function showImage(index) {
+	images.forEach((img, i) => {
+		img.style.display = i === index ? 'block' : 'none';
+	});
+}
+
+if (images.length > 0) {
+	showImage(current);
+	//botao avançar
+	btn.onclick = function(){
+		current = (current + 1) % images.length;
+		showImage(current);
+	};
+}
+if (voltar) {
+    voltar.onclick = function() {
+        current = (current - 1 + images.length) % images.length;
+        showImage(current);
+    };
+}
